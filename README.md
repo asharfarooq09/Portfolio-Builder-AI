@@ -70,7 +70,7 @@ A modern web application that leverages AI to generate professional portfolios. 
 
 ### Google Gemini API
 
-1. Visit the [Google AI Studio](https://makersuite.google.com/app/apikey)
+1. Visit the [Google AI Studio]
 2. Create a new API key
 3. Add the API key to your `.env` file as `VITE_GEMINI_API_KEY`
 
