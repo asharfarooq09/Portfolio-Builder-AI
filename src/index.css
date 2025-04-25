@@ -1,0 +1,136 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 326 100% 60%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 326 100% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 263.4 70% 50.4%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full p-3 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-primary transition duration-200;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 transition duration-200;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg bg-secondary text-secondary-foreground font-medium hover:bg-secondary/90 transition duration-200;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-lg transition-all duration-200 hover:-translate-y-1;
+  }
+  
+  .markdown-preview {
+    @apply prose prose-slate max-w-none;
+  }
+  
+  .markdown-preview h1 {
+    @apply text-2xl font-bold mb-4 text-foreground;
+  }
+  
+  .markdown-preview h2 {
+    @apply text-xl font-bold mb-3 text-foreground;
+  }
+  
+  .markdown-preview h3 {
+    @apply text-lg font-bold mb-2 text-foreground;
+  }
+  
+  .markdown-preview p {
+    @apply mb-4 text-foreground;
+  }
+  
+  .markdown-preview ul {
+    @apply list-disc pl-5 mb-4;
+  }
+  
+  .markdown-preview ol {
+    @apply list-decimal pl-5 mb-4;
+  }
+  
+  .markdown-preview a {
+    @apply text-primary underline;
+  }
+}
