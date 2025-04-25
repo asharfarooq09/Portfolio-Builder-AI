@@ -33,12 +33,14 @@ A modern web application that leverages AI to generate professional portfolios. 
 ## 🚀 Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/yourusername/profile-pro-ai.git
+   git clone https://github.com/asharfarooq09/Portfolio-Builder-AI
    cd profile-pro-ai
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -46,6 +48,7 @@ A modern web application that leverages AI to generate professional portfolios. 
    ```
 
 3. Create a `.env` file in the root directory and add your environment variables:
+
    ```env
    VITE_FIREBASE_API_KEY=your_firebase_api_key
    VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
@@ -124,6 +127,7 @@ The portfolio generation feature uses Google's Gemini AI to:
 ## 🚀 Deployment
 
 1. Build the project:
+
    ```bash
    npm run build
    # or
